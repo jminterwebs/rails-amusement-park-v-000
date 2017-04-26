@@ -1,0 +1,11 @@
+<%= @user.name %>
+<p1>Mood</p1><%= @user.mood %> <br>
+Happy: <%= @user.happiness %><br>
+Nausea: <%= @user.nausea %><br>
+Tickets: <%= @user.tickets %><br>
+Hieght: <%= @user.height %><br>
+Admin: <% if @user.admin %><br>
+  "ADMIN"
+  <% end %>
+  <%= link_to "See attractions", attractions_path  %>
+  <%= link_to "Log Out", signout_path %>
